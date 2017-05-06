@@ -29,12 +29,24 @@
 		</div>
 		<div class="textytext">
 			<h3>Color Picker Lab</h3>
-			R <input type="range" id="red" value="60" min="0" max="255"> <span id="redval"></span><br>
-			G <input type="range" id="green" value="60" min="0" max="255"> <span id="greenval"></span><br>
-			B <input type="range" id="blue" value="60" min="0" max="255"> <span id="blueval"></span><br>
-			<hr>
-			SIZE <input type="range" id="size" value="20" min="5" max="100"> <span id="sizeval"></span><br>
-
+			<fieldset>
+				<legend>Custom Color & Size</legend>
+				R <input type="range" id="red" value="60" min="0" max="255"> <span id="redval"></span><br>
+				G <input type="range" id="green" value="90" min="0" max="255"> <span id="greenval"></span><br>
+				B <input type="range" id="blue" value="60" min="0" max="255"> <span id="blueval"></span><br>
+				<hr>
+				SIZE <input type="range" id="size" value="20" min="5" max="100"> <span id="sizeval"></span><br>
+			</fieldset>
+			<fieldset>
+				<legend>Presets</legend>
+				<input type="radio" name="fun" value="none" onclick="radioClick(this)" checked="checked">None</input><br>
+				<input type="radio" name="fun" onclick="radioClick(this)" value="white">White</input><br>
+				<input type="radio" name="fun" onclick="radioClick(this)" value="black">Black</input><br>
+				<input type="radio" name="fun" onclick="radioClick(this)" value="pink">Pink</input><br>
+				<hr>
+				<input type="checkbox" id="hider" value="fun3">Hide/Unhide</input><br>
+				<button id="reset">Reset</button>
+			</fieldset>
 		</div>
 	</div>
 	<div class="bottom">This is the bottom of the page. 2017.</div>
